@@ -1,5 +1,5 @@
 # bootstrap-tooltip.js
-bootstrap，form表单提交tooltip-验证-引导-工具提示
+bootstrap，form表单提交,tooltip-验证-引导-工具提示
 
 #jQuery-Validation-Bootstrap-tooltip
 扩展 jQuery 验证插件错误标签替换工具提示
