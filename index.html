@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/tooltip.js"></script>
+<script type="text/javascript" src="js/jquery.validate-1.14.0.min.js"></script>
+<script type="text/javascript" src="js/jquery-validate.bootstrap-tooltip.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#theform").validate({
+				rules: {
+					example4: {
+						email: true,
+						required: true
+					},
+					example5: {
+						required: true
+					}
+				},
+				messages: {
+					example5: "1111"
+				},
+				tooltip_options: {
+					example4: {
+						trigger: 'focus'
+					},
+					example5: {
+						placement: 'right',
+						html: true
+					}
+				},
+				submitHandler: function(form) {
+					$("#validity_label").html('<div class="alert alert-success">No errors.  Like a boss.</div>');
+				},
+				invalidHandler: function(form, validator) {
+					$("#validity_label").html('<div class="alert alert-danger">There be ' + validator.numberOfInvalids() + ' error' + (validator.numberOfInvalids() > 1 ? 's' : '') + ' here.  OH NOES!!!!!</div>');
+				}
+			});
+		});
+	</script>
+</head>
+<!-- data-placement="bottom" 提示方向-->
+<body>
+	<div class="container">
+		<form id="theform" class="form-horizontal">
+			<legend>Examples</legend>
+			<fieldset>
+				<div class="form-group">
+					<label class="text-right control-label">Input1</label>
+					<input class="form-control" type="text" name="example1" required placeholder="Required">
+				</div>
+				<div class="form-group">
+					<label class="text-right control-label">Input1</label>
+					<input class="form-control" type="text" name="example" required placeholder="Required">
+				</div>
+
+				<div class="form-group">
+					<label class="text-right control-label">Input2</label>
+						<input class="form-control" type="number"  name="example2" required placeholder="Number required">
+				</div>
+				<div class="form-group">
+					<label class="text-right control-label">Input3</label>
+						<input type="text" class="required email form-control" data-trigger="focus" name="example3" placeholder="Email required">
+				</div>
+				<div class="form-group">
+					<label class="text-right control-label">Input4</label>
+						<input type="text" name="example4" class="form-control" placeholder="Email required">
+				</div>
+				<div class="form-group">
+						<label>
+							<input type="checkbox" name="example5"> Some EULA you did not actually read but will check the box saying you did.
+						</label>
+				</div>
+			</fieldset>
+				<div class="row margin-top30">
+					<div class="col-md-5">
+						<input type="submit" class="btn btn-primary pull-right" value="Check">
+					</div>
+					<div class="col-md-5" id="validity_label"></div>
+				</div>
+		</form>
+
+	</div>
+</body>
+<html>
