@@ -1,5 +1,6 @@
 # bootstrap-tooltip.js
 bootstrap，form表单提交,tooltip-验证-引导-工具提示
+[演示](http://xurui3762791.github.io/bootstrap-tooltip.js/)
 
 #jQuery-Validation-Bootstrap-tooltip
 扩展 jQuery 验证插件错误标签替换工具提示
@@ -27,4 +28,6 @@ example :
      });
 
 #Demo
+
+
 ![Demo](demopictures.png)
