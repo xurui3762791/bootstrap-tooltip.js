@@ -7,8 +7,8 @@ bootstrap，form表单提交tooltip-验证-引导-工具提示
 #Requirements
 
 - [jQuery](http://jquery.com/)
-- Bootstrap(http://v3.bootcss.com/)
-- jQuery Validation(http://jqueryvalidation.org/)
+- [Bootstrap](http://v3.bootcss.com/)
+- [jQuery Validation](http://jqueryvalidation.org/)
 
 
 #Usage
@@ -26,5 +26,5 @@ example :
         }
      });
 
-#Demonstrate
-![demopictures](demopictures.png)
+#Demo
+![Demo](demopictures.png)
