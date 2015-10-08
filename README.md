@@ -27,4 +27,4 @@ example :
      });
 
 #Demonstrate
-![Alt text](/path/to/img.jpg)
+![demopictures](demopictures.png)
