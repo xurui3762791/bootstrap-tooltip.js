@@ -2,7 +2,7 @@
 bootstrap，form表单提交,tooltip-验证-引导-工具提示
 
 #jQuery-Validation-Bootstrap-tooltip
-扩展 jQuery 验证插件错误标签替换工具提示
+扩展 jQuery 验证插件错误标签替换工具提示 
 
 #Requirements
 
